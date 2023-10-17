@@ -8,13 +8,14 @@ int _print_int(va_list args)
 {
 int n = va_arg(args, int);
 int num, digit, last = n % 10, x = 1;
-int i = 0;
+int i = 1;
 n = n / 10;
 num = n;
 if (last < 0)
 {
 _putchar('-');
 num = -num;
+n = -n;
 last = -last;
 i++;
 }
