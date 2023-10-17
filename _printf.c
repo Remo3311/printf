@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 match m[] = {
-{"%c", _print_char},
+{"%c`", _print_char},
 {"%s", _print_string},
 {"%%", _print_holder},
 {"%d", _print_dec},
