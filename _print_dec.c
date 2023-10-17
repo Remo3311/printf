@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _print_dec  - prints integers passed
  * @args: ints entered by user
@@ -26,9 +27,9 @@ x = x * 10;
 num = num / 10;
 }
 num = n;
-while (exp > 0)
+while (x > 0)
 {
-digit = num / exp;
+digit = num / x;
 _putchar(digit + '0');
 num = num - (digit * (x));
 x = x / 10;

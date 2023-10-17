@@ -28,7 +28,7 @@ num = num / 10;
 num = n;
 while (x > 0)
 {
-digit = num / exp;
+digit = num / x;
 _putchar(digit + '0');
 num = num - (digit * (x));
 x = x / 10;
