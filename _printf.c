@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 match m[] = {
-{"%c", _print_char},
+{"%c`", _print_char},
 {"%s", _print_string},
 {"%%", _print_holder},
 {"%d", _print_dec},
@@ -24,7 +24,7 @@ Here:
 while (format[i] != '\0')
 {
 j = 4;
-while (j >= 1)
+while (j >= 0)
 {
 if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
 {
